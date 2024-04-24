@@ -33,6 +33,9 @@ modules:
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
+  - type: script
+    scripts:
+      - install-asus-firmware.sh
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
