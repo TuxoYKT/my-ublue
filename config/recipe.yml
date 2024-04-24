@@ -23,6 +23,7 @@ modules:
     install:
       - asusctl
       - supergfxctl
+      - distrobox
       # - micro
       # - starship
     remove:
