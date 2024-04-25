@@ -33,7 +33,7 @@ modules:
       - zerotier-one
       - rofimoji
       - yt-dlp
-      - libjpeg-turbo
+      - waydroid
       # - micro
       # - starship
     remove:
@@ -77,3 +77,4 @@ modules:
         - supergfxd.service
         - zerotier-one.service
         - systemd-networkd.service
+        - waydroid-container.service
