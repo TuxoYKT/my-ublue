@@ -56,6 +56,7 @@ modules:
         - com.usebottles.bottles
         - org.remmina.Remmina
         - com.visualstudio.code
+        - com.bitwarden.desktop
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
         # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
