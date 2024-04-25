@@ -72,3 +72,4 @@ modules:
       enabled:
         - supergfxd.service
         - zerotier-one.service
+        - systemd-networkd.service
