@@ -17,6 +17,11 @@ modules:
           # put configuration files you want in /etc/ on a booted system 
           # in /usr/etc/ in the image. read more in files module reference.
 
+  - type: script
+    scripts:
+      - install-asus-firmware.sh
+      - enable-zerotier-repo.sh
+
   - type: rpm-ostree
     repos: # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/lukenukem/asus-linux/repo/fedora-%OS_VERSION%/lukenukem-asus-linux-fedora-%OS_VERSION%.repo
@@ -25,6 +30,7 @@ modules:
       - supergfxctl
       - distrobox
       - pipewire-alsa
+      - zerotier-one
       # - micro
       # - starship
     remove:
@@ -33,9 +39,6 @@ modules:
       - firefox
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
-  - type: script
-    scripts:
-      - install-asus-firmware.sh
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
@@ -66,3 +69,4 @@ modules:
     system:
       enabled:
         - supergfxd.service
+        - zerotier-one.service
