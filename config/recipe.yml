@@ -33,6 +33,7 @@ modules:
       - zerotier-one
       - rofimoji
       - yt-dlp
+      - libjpeg-turbo
       # - micro
       # - starship
     remove:
